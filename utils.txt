@@ -1,0 +1,8 @@
+--------------------- JavaScript ----------------------------
+Impedir que o formulário seja submetido novamente após dar F5
+window.history.replaceState && window.history.replaceState(null, null, window.location.href);
+
+------------------------------ PHP ------------------------------
+Validar algo de acordo com a submissão de um formulário
+(Mudar x pra condição verdadeira e y pra condição falsa)
+($_SERVER['REQUEST_METHOD'] == 'POST') ? 'x' : 'y'
