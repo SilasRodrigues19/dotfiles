@@ -115,3 +115,9 @@ const isAlpha = (str) => /^[A-Z]+$/i.test(str);
 
 /* Check if a value is base64 encoded */
 const isBase64 = (value) => /^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$/.test(value);
+
+/* ######################################################################################## */
+
+/* Check if a string contains only digits */
+const isNumeric = (str) => !/[^0-9]/.test(str);
+// Examples
