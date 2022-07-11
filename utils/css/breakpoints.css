@@ -1,0 +1,29 @@
+/* Small Devices */
+@media screen and (min-width : 200px) {
+   /* Styles here */
+}
+
+/* Smart Phone */
+@media screen and (min-width : 320px) {
+   /* Styles here */
+}
+
+/* Tablet */
+@media screen and (min-width : 768px) {
+   /* Styles here */
+}
+
+/* Laptop */
+@media screen and (min-width : 1200px) {
+   /* Styles here */
+}
+
+/* Desktop */
+@media screen and (min-width : 1600px) {
+   /* Styles here */
+}
+
+/*
+  Specific device
+  https://simplecss.eu/
+*/
