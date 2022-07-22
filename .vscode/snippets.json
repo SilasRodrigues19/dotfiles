@@ -1,13 +1,14 @@
 {
-  "html": {
-    "snippets": {
-      "img": "img[src='./assets/img/' width height loading='lazy']"
+    "html": {
+        "snippets": {
+            "img": "img[src='./assets/img/' width height loading='lazy']"
+        }
+    },
+    "css": {
+        "snippets": {
+            "*": "margin: 0; padding: 0; box-sizing: border-box;",
+            "fc": "display: flex; justify-content: center; align-items: center;",
+            "flexColumn": "display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;"
+        }
     }
-  },
-  "css": {
-    "snippets": {
-      "fc": "display: flex; justify-content: center; align-items: center",
-      "flexColumn": "display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap"
-    }
-  }
 }
