@@ -1,57 +1,65 @@
 <?php
 
-  // Com alerts e ícones do Bootstrap
-
-  function exibeMensagem() 
+  function notify($title, $msg, $type, $width) 
   {
-    if(isset($_SESSION['msg'])) {
-      echo monta_box_mensagem_aviso($_SESSION['msg'], $_SESSION['status']);
-      
-      unset($_SESSION['msg']);
-      unset($_SESSION['status']);
-    }
+    $_SESSION['title'] = $title;
+    $_SESSION['msg'] = $msg;
+    $_SESSION['type'] = $type;
+    $_SESSION['width'] = $width;
+
   }
 
-  function monta_box_mensagem_aviso( $msg, $status = 'info' )
+  function showMessage() 
   {
-    switch( $status ) {
+    if(isset($_SESSION['title'])) {
+      echo alertBox($_SESSION['title'], $_SESSION['msg'], $_SESSION['type'], $_SESSION['width']);
+      
+      unset($_SESSION['title']);
+      unset($_SESSION['msg']);
+      unset($_SESSION['type']);
+      unset($_SESSION['width']);
+    }
+  }
+  
+
+  function alertBox($title, $msg, $type, $width)
+  {
+    switch( $type ) {
       case 'erro':
+      case 'error':
       case 'danger':
-        $status = 'alert-danger';
-        $icone  = 'mdi mdi-close-circle mr-2';
-        $titulo = 'Aviso!';
+        $type = 'alert-danger';
+        $icon  = 'icon-park-solid:close-one';
+        $title = 'Erro!';
       break;
       case 'ok':
       case 'success':
-        $status = 'alert-success';
-        $icone  = 'mdi mdi-check-circle mr-2';
-        $titulo = 'Sucesso!';
+        $type = 'alert-success';
+        $icon  = 'akar-icons:circle-check-fill';
+        $title = 'Sucesso!';
       break;
       case 'aviso':
       case 'warning':
-        $status = 'alert-warning';
-        $icone  = 'mdi mdi-alert mr-2';
-        $titulo = 'Aviso!';
+        $type = 'alert-warning';
+        $icon  = 'ph:warning-circle-fill';
+        $title = 'Aviso!';
       break;
       case 'info':
-        $status = 'alert-info';
-        $icone  = 'mdi mdi-alert-circle mr-2';
-        $titulo = 'Informação!';
+        $type = 'alert-info';
+        $icon  = 'akar-icons:info-fill';
+        $title = 'Informação!';
       break;
       default:
-        $status = 'alert-default';
-        $icone  = 'mdi mdi-alert-circle mr-2';
-        $titulo = 'Aviso!';
+        $type = 'alert-default';
+        $icon  = 'mdi mdi-alert-circle mr-2';
+        $title = 'Aviso!';
     }
 
-    $box = '';
-    $box .= '<div class="row"><div class="col-md-12"><div class="alert ' . $status . '" role="alert">';
-      // $box .= '<p><i class="' . $icone . '"></i> <strong>' . $titulo . '</strong></p>';
-      $box .= '<i class="' . $icone . '"></i> ' . $msg;
-    $box .= '</div></div></div>';
+    $box = "<div class=\"col-md-6 py-4 my-2 d-flex justify-content-center w-100\">
+              <span class=\"$width text-center alert $type\" role=\"alert\">
+              <span class=\"iconify mb-1\" data-icon=\"$icon\"></span> <strong> $title </strong> $msg
+              </span>
+           </div>";
 
     return $box;
   }
-
-
-?>
