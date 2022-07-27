@@ -41,3 +41,8 @@ x ?
   showAlertBox('success', 'Success', 'X is true type')
   :
   showAlertBox('error', 'Error', 'X is false type');
+
+/*
+  Demo:
+  https://codepen.io/SilasRodrigues19/full/oNqGVmG
+*/
