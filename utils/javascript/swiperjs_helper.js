@@ -22,6 +22,28 @@ const showAlertBox = (type, title, message) => {
       '<a target="_blank" href="https://github.com/SilasRodrigues19">SilasRodrigues19</a>',
     allowOutsideClick: false,
     showCloseButton: true,
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire({
+        title: 'Loading',
+        html: 'Wait, please...',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+      });
+      Swal.showLoading();
+    } else {
+      Swal.fire({
+        title: 'Canceling',
+        html: 'Wait, please...',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+      });
+
+      Swal.showLoading();
+      setTimeout(() => {
+        window.location.reload();
+      }, 250);
+    }
   });
 };
 
