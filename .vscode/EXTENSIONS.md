@@ -2,11 +2,11 @@
 
 ##### Themes and Icons
 
-[AlterNight](https://marketplace.visualstudio.com/items?itemName=spaceinvadev.alternight)
-
-[Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+[Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
 
 [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+[Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons)
 
 <hr>
 
@@ -26,8 +26,6 @@
 
 [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 
-[JS-CSS-HTML Formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
-
 [JS JSX Snippets](https://marketplace.visualstudio.com/items?itemName=skyran.js-jsx-snippets)
 
 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
@@ -37,6 +35,10 @@
 [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+[PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+
+[PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
 
 [Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese)
 
