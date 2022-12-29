@@ -1,0 +1,14 @@
+// Place your key bindings in this file to override the defaultsauto[]
+
+[
+  {
+    "key": "ctrl+abnt_c1",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  }
+]
