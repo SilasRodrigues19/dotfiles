@@ -18,8 +18,8 @@ updates:
       - 'npm'
       - 'dependencies'
     commit-message:
-      # Prefixo de todos commits com "build"
-      prefix: 'build'
+      # Prefixo de todos commits com "chore(deps)"
+      prefix: 'chore(deps)'
       # Usuários que vão revisar os PR's
     reviewers:
       - 'SilasRodrigues19'
