@@ -2,7 +2,7 @@
 
 ##### Themes and Icons
 
-[Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
+[Tokyo Night (Tokyo Night Storm)](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
 
 [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
@@ -19,6 +19,8 @@
 [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
@@ -43,5 +45,9 @@
 [Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese)
 
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+[Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
+
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
