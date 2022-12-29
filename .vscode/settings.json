@@ -93,8 +93,9 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+
   // Path to custom snippets
-  "emmet.extensionsPath": ["C:\\Users\\CRM\\.vscode\\custom"],
+  "emmet.extensionsPath": ["C:\\Users\\Silas\\.vscode\\custom"],
 
   // Spell Checker
   "cSpell.enableFiletypes": ["!c", "!cpp", "!csharp", "!php", "!scss"],
@@ -104,13 +105,13 @@
 
   // Default Formatter
   "[html]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
-    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -139,7 +140,6 @@
 
   // Git and Gitlens
   "git.autofetch": true,
-  "prettier.singleQuote": true,
   "gitlens.defaultDateLocale": null,
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultDateShortFormat": null,
@@ -197,5 +197,11 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+
+  // DX - Developer Experience
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "editor.fontVariations": false,
+  "cSpell.patterns": []
 }
