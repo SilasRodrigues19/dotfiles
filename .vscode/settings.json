@@ -12,7 +12,7 @@
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -93,28 +93,36 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   // Path to custom snippets
-  "emmet.extensionsPath": ["C:\\Users\\Silas\\.vscode\\custom"],
+  "emmet.extensionsPath": ["C:\\Users\\CRM\\.vscode\\custom"],
 
   // Spell Checker
   "cSpell.enableFiletypes": ["!c", "!cpp", "!csharp", "!php", "!scss"],
   "cSpell.language": "en,pt",
   "editor.suggestSelection": "first",
-  "cSpell.userWords": ["chakra", "Desenvolvedor", "middlewares", "prefetch"],
+  "cSpell.userWords": [
+    "chakra",
+    "Desenvolvedor",
+    "middlewares",
+    "prefetch",
+    "noopener",
+    "noreferer"
+  ],
 
   // Default Formatter
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": false
   },
   "[javascriptreact]": {
@@ -140,6 +148,7 @@
 
   // Git and Gitlens
   "git.autofetch": true,
+  "prettier.singleQuote": true,
   "gitlens.defaultDateLocale": null,
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultDateShortFormat": null,
@@ -198,10 +207,24 @@
       "italic": false
     }
   ],
-
-  // DX - Developer Experience
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
-  "editor.fontVariations": false,
-  "cSpell.patterns": []
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "markdown-preview-enhanced.previewTheme": "atom-light.css",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": null,
+      "savePathReplacementPairs": null
+    }
+  ],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
