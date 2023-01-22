@@ -44,7 +44,11 @@
 
 [Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese)
 
+[PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+
 [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+[Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
 
 [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
 
