@@ -4,6 +4,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.tree.indent": 20,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
   "workbench.colorTheme": "Tokyo Night Storm",
 
   // Editor Settings
@@ -12,7 +13,7 @@
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -21,6 +22,7 @@
   "editor.lineHeight": 18,
   "editor.semanticHighlighting.enabled": false,
   "editor.rulers": [80, 120],
+  "editor.inlineSuggest.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -93,20 +95,24 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  // Path to custom snippets
-  "emmet.extensionsPath": ["C:\\Users\\CRM\\.vscode\\custom"],
 
   // Spell Checker
+  "emmet.extensionsPath": ["C:\\Users\\CRM\\.vscode\\custom"],
   "cSpell.enableFiletypes": ["!c", "!cpp", "!csharp", "!php", "!scss"],
   "cSpell.language": "en,pt",
   "editor.suggestSelection": "first",
   "cSpell.userWords": [
     "chakra",
+    "CHATGPT",
+    "davinci",
     "Desenvolvedor",
+    "Fastify",
     "middlewares",
-    "prefetch",
     "noopener",
-    "noreferer"
+    "noreferer",
+    "OPENAI",
+    "prefetch",
+    "unixepoch"
   ],
 
   // Default Formatter
@@ -122,16 +128,15 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
-    "editor.formatOnSave": false
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "security.workspace.trust.untrustedFiles": "open",
 
   // Terminal
   "terminal.integrated.showExitAlert": false,
@@ -149,7 +154,7 @@
   // Git and Gitlens
   "git.autofetch": true,
   "prettier.singleQuote": true,
-  "gitlens.defaultDateLocale": null,
+  "prettier.jsxSingleQuote": true,
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultDateShortFormat": null,
   "gitlens.defaultTimeFormat": null,
@@ -207,15 +212,13 @@
       "italic": false
     }
   ],
-  "workbench.productIconTheme": "material-product-icons",
-  "editor.inlineSuggest.enabled": true,
+
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "yaml": false,
     "plaintext": false,
     "markdown": false
   },
-  "markdown-preview-enhanced.previewTheme": "atom-light.css",
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -225,6 +228,10 @@
     }
   ],
   "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

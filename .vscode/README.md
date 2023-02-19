@@ -12,6 +12,8 @@
 
 ##### Utilities
 
+[Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
+
 [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
 [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
@@ -23,6 +25,8 @@
 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
 [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+[Inline Fold](https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold)
 
 [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
 

@@ -1,5 +1,4 @@
 // Place your key bindings in this file to override the defaultsauto[]
-
 [
   {
     "key": "ctrl+abnt_c1",
@@ -10,5 +9,9 @@
     "key": "shift+alt+i",
     "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected"
   }
 ]

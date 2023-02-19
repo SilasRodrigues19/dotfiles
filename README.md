@@ -16,3 +16,16 @@
 
 [git-cz](https://www.npmjs.com/package/git-cz)
 
+<hr>
+
+# VSCode Configs and Code Snippets
+
+##### Code Snippets
+
+[Code snippets, helpers and utils](https://github.com/SilasRodrigues19/dotfiles/tree/main/utils)
+
+<hr>
+
+##### VSCode Configs
+
+[VSCode Configs](https://github.com/SilasRodrigues19/dotfiles/tree/main/.vscode)
