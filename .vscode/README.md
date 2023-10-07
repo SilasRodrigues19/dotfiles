@@ -20,6 +20,8 @@
 
 [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
+[Console Ninja](https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja)
+
 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
@@ -40,6 +42,8 @@
 
 [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
+[Nextjs snippets](https://marketplace.visualstudio.com/items?itemName=PulkitGangwar.nextjs-snippets)
+
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
@@ -54,7 +58,11 @@
 
 [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
 
+[REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
 [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
+
+[Svg Preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview)
 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
