@@ -13,5 +13,10 @@
   {
     "key": "ctrl+shift+l",
     "command": "editor.action.insertCursorAtEndOfEachLineSelected"
+  },
+  {
+    // Open Local History: Find Entry to Restore
+    "key": "pausebreak",
+    "command": "workbench.action.localHistory.restoreViaPicker"
   }
 ]

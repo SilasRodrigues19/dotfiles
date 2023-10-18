@@ -6,6 +6,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.colorTheme": "Tokyo Night Storm",
+  "files.defaultLanguage": "plaintext",
 
   // Editor Settings
   "editor.fontFamily": "JetBrains Mono",
@@ -13,9 +14,9 @@
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "editor.formatOnType": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "editor.fontSize": 12,
@@ -93,7 +94,7 @@
     "javascript": "jsx"
   },
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": ["javascriptreact", "typescriptreact"]
   },
 
   // Spell Checker
@@ -102,6 +103,8 @@
   "cSpell.language": "en,pt",
   "editor.suggestSelection": "first",
   "cSpell.userWords": [
+    "alpinejs",
+    "astrojs",
     "chakra",
     "CHATGPT",
     "davinci",
@@ -112,6 +115,7 @@
     "noreferer",
     "OPENAI",
     "prefetch",
+    "tailwindcss",
     "unixepoch"
   ],
 
@@ -129,10 +133,15 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -158,6 +167,9 @@
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultDateShortFormat": null,
   "gitlens.defaultTimeFormat": null,
+
+  // Prettier config
+  "prettier.documentSelectors": ["**/*.astro"],
 
   // Better Comments Config
   "better-comments.tags": [
@@ -214,11 +226,14 @@
   ],
 
   "github.copilot.enable": {
-    "*": false,
-    "yaml": false,
+    "*": true,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "scminput": false,
+    "yaml": false,
+    "php": true
   },
+  "liveServer.settings.port": 5501,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -227,11 +242,26 @@
       "savePathReplacementPairs": null
     }
   ],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma",
     "editor.formatOnSave": true
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "editor.multiCursorLimit": 50000,
+  "markdown-preview-enhanced.previewTheme": "monokai.css",
+  "terminal.integrated.env.windows": {},
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editor.enablePreview": false
 }
