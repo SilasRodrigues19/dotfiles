@@ -14,6 +14,8 @@
 
 [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
 
+[Better Align](https://marketplace.visualstudio.com/items?itemName=Chouzz.vscode-better-align)
+
 [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
 [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
@@ -23,6 +25,8 @@
 [Console Ninja](https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja)
 
 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
