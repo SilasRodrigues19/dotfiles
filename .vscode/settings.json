@@ -2,6 +2,7 @@
   // Workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 20,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
@@ -119,7 +120,7 @@
     "unixepoch"
   ],
 
-  // Default Formatter
+  // Language-specific settings
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -146,13 +147,31 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
 
   // Terminal
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.fontSize": 10,
   "terminal.integrated.gpuAcceleration": "off",
 
-  // Oh My Push Settings
+  // Oh My Posh Settings
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.shellArgs.windows": [
     "-ExecutionPolicy",
@@ -162,19 +181,19 @@
 
   // Git and Gitlens
   "git.autofetch": true,
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
   "gitlens.defaultDateFormat": null,
   "gitlens.defaultDateShortFormat": null,
   "gitlens.defaultTimeFormat": null,
 
   // Prettier config
   "prettier.documentSelectors": ["**/*.astro"],
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
 
   // Better Comments Config
   "better-comments.tags": [
     {
-      // Depreciado ou em desuso
+      // Depreciated or disused
       "tag": "!",
       "color": "#b34045",
       "strikethrough": false,
@@ -184,7 +203,7 @@
       "italic": false
     },
     {
-      // Necessita de uma verificação
+      // Need a check or review
       "tag": "?",
       "color": "#4091d7",
       "strikethrough": false,
@@ -194,7 +213,7 @@
       "italic": false
     },
     {
-      // Testes unitários
+      // Unit tests
       "tag": "//",
       "color": "#99e9eb",
       "strikethrough": true,
@@ -204,7 +223,7 @@
       "italic": false
     },
     {
-      // Para fazer ou implementar
+      // To do or implement
       "tag": "todo",
       "color": "#fecf6d",
       "strikethrough": false,
@@ -214,7 +233,7 @@
       "italic": false
     },
     {
-      // Informação importante
+      // Important information
       "tag": "*",
       "color": "#2d884d",
       "strikethrough": false,
@@ -233,7 +252,6 @@
     "yaml": false,
     "php": true
   },
-  "liveServer.settings.port": 5501,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -242,26 +260,7 @@
       "savePathReplacementPairs": null
     }
   ],
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma",
-    "editor.formatOnSave": true
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
-  },
-  "editor.multiCursorLimit": 50000,
   "markdown-preview-enhanced.previewTheme": "monokai.css",
-  "terminal.integrated.env.windows": {},
-  "[sql]": {
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.editor.enablePreview": false
+  "glassit.alpha": 230
 }
