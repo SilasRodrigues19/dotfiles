@@ -1,7 +1,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
-[![GLP-3.0 License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -47,6 +47,8 @@ JetBrains Mono is a typeface made for the specific needs of developers.
 <hr>
 
 ### Terminal
+
+[Terminal Config](./TERMINAL.md)
 
 [Oh My Posh](https://ohmyposh.dev/)
 Oh My Posh enables you to use the full color set of your terminal by using colors to define and render the prompt.
