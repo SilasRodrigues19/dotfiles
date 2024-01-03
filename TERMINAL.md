@@ -11,10 +11,11 @@
     <img src="./public/powershell.svg" alt="Logo" height="40">
   </a>
 
-  <h3 align="center"></h3>
+  <h3 align="center">Terminal Config</h3>
 
+    
   <p align="center">
-    Terminal Config
+    My terminal config features Oh My Posh with the sleek star theme, enhancing the command-line experience with a touch of style and functionality
     <br />
   </p>
 </p>
