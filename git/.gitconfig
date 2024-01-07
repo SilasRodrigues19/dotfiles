@@ -1,0 +1,27 @@
+## git config --global --edit
+
+[core]
+	editor = "code --wait"
+[user]
+	email = silasrodrigues.fatec@gmail.com
+	name = Silas Rodrigues
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[log]
+	date = relative
+	decorate = short
+	abbrevCommit = true
+	commitGraph = true
+[alias]
+	st = status
+	lg = log --graph --pretty=format:'%C(auto)%h%d %s (%aN, %ar)'
+	pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
+	ls = log --pretty=format:\"%h - %an, %ar : %s\" --graph
+	newbranch = "!f() { NEW_BRANCH=$1; \
+        git checkout -b $NEW_BRANCH && \
+        git add . && \
+        git commit && \
+        git push -u origin $NEW_BRANCH; }; f"
