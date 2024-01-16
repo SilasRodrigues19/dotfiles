@@ -32,3 +32,17 @@ const setAttribute = (el, attribute, value) => el.setAttribute(attribute, value)
 
 // Helper for removeAttribute
 const removeAttribute = (el, attribute) => el.removeAttribute(attribute);
+
+// Helper for handle with CSS styles
+const applyStyles = (element, styles) => {
+    for (let property in styles) element.style[property] = styles[property];
+}
+
+// Usage
+var myElement = document.querySelector('#myElementId');
+applyStyles(myElement, {
+    background: '#1e1e1e',
+    color: '#cacaca',
+    fontSize: '1rem',
+    borderRadius: '2rem'
+});
