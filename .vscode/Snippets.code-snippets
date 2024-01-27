@@ -8,6 +8,55 @@
     "body": ["console.log($1);"],
     "description": "Log output to console"
   },
+  "Fetch API": {
+    "scope": "javascript, typescript",
+    "prefix": "fetch",
+    "body": [
+      "fetch('$1')",
+      "  .then(response => response.json())",
+      "  .then(data => {",
+      "    $2",
+      "  })",
+      "  .catch(error => console.error(`Error: \u0024{error.message}`));"
+    ],
+    "description": "Fetch data using the Fetch API"
+  },
+  "Map Function": {
+    "scope": "javascript, typescript, typescriptreact, javascriptreact, astro",
+    "prefix": "map",
+    "body": ["const $1 = $2.map(($3) => {", "  return $4;", "});"],
+    "description": "Map function"
+  },
+  "Promise Chain": {
+    "scope": "javascript, typescript",
+    "prefix": "promise",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "  $1",
+      "})",
+      ".then(result => {",
+      "  $2",
+      "})",
+      ".catch(error => console.error(`Error: \u0024{error.message}`));"
+    ],
+    "description": "Create a basic promise chain"
+  },
+  "Query Selector": {
+    "scope": "javascript, typescript, typescriptreact, javascriptreact, astro",
+    "prefix": "queryselector",
+    "body": ["const $1 = document.querySelector('$2');"],
+    "description": "DOM element selection with querySelector"
+  },
+  "Local Storage Getter/Setter": {
+    "scope": "javascript, typescript, typescriptreact, javascriptreact, astro",
+    "prefix": "localstorage",
+    "body": [
+      "const $1 = localStorage.getItem('$2');",
+      "",
+      "localStorage.setItem('$2', $3);"
+    ],
+    "description": "Local Storage getter and setter"
+  },
   "ES6 Function": {
     "scope": "javascript, typescript, typescriptreact, javascriptreact, astro",
     "prefix": "constf",
@@ -23,11 +72,22 @@
   "ES6 arrow function": {
     "scope": "javascript, typescript, typescriptreact, javascriptreact, astro",
     "prefix": "constfa",
-    "body": ["const ${1:funcName} = (${2:args}) => $3"],
+    "body": ["const ${1:funcName} = (${2:args}) => {", "\t$3", "}"],
     "description": "Create an ES6 arrow function"
   },
 
   // HTML Snippets
+  "Video Tag": {
+    "scope": "html, astro, javascriptreact, typescriptreact",
+    "prefix": "video",
+    "body": [
+      "<video width=\"$1\" height=\"$2\" controls>",
+      "  <source src=\"$3\" type=\"$4\">",
+      "  Your browser does not support the video tag.",
+      "</video>"
+    ],
+    "description": "Create a video tag with source and controls"
+  },
   "Image [lazy and decoding attributes]": {
     "scope": "html, astro, javascriptreact, typescriptreact",
     "prefix": "img",
@@ -36,7 +96,7 @@
     ],
     "description": "Create an image tag with lazy loading and async decoding"
   },
-  "Ancor [target, rel and aria-label attributes]": {
+  "Anchor [target, rel and aria-label attributes]": {
     "scope": "html, astro, javascriptreact, typescriptreact",
     "prefix": "a",
     "body": [
@@ -125,6 +185,55 @@
     ],
     "description": "Starter CSS"
   },
+  "CSS Grid Template": {
+    "scope": "css, scss, sass, less, stylus",
+    "prefix": "grid",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));",
+      "gap: 16px;",
+      "justify-content: center;"
+    ],
+    "description": "CSS Grid layout"
+  },
+  "Custom Font Face": {
+    "scope": "css, scss, sass, less, stylus",
+    "prefix": "fontface",
+    "body": [
+      "@font-face {",
+      "  font-family: '$1';",
+      "  src: url('$2') format('$3');",
+      "  font-weight: $4;",
+      "  font-style: $5;",
+      "}"
+    ],
+    "description": "Custom font face declaration"
+  },
+  "Flexbox Container": {
+    "scope": "css, scss, sass, less, stylus",
+    "prefix": "flexbox",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ],
+    "description": "Create a flexbox container with center alignment"
+  },
+  "Media Query - Mobile": {
+    "scope": "css, scss, sass, less, stylus",
+    "prefix": "media",
+    "body": ["@media only screen and (max-width: 768px) {", "  $1", "}"],
+    "description": "Media query for mobile devices"
+  },
+  "Tailwind Text Gradient": {
+    "scope": "css, scss, sass, less, stylus, astro, javascriptreact, typescriptreact",
+    "prefix": "textgradient",
+    "body": [
+      "text-transparent bg-clip-text bg-gradient-to-${1|t,tr,r,br,b,bl,l,tl|} from-$2-$3 to-$4-$5"
+    ],
+    "description": "Tailwind Text Gradient"
+  },
+  // Project documentation
   "License template": {
     "scope": "plaintext, LICENSE, LICENSE.txt",
     "prefix": "license_mit",
@@ -329,5 +438,15 @@
       "[🔼 Back to top](#project-name)"
     ],
     "description": "Create a README template for GitHub projects"
+  },
+  "Markdown Table": {
+    "scope": "plaintext, markdown",
+    "prefix": "table",
+    "body": [
+      "| Header 1 | Header 2 |",
+      "| -------- | -------- |",
+      "| $1       | $2       |"
+    ],
+    "description": "Markdown table structure"
   }
 }
