@@ -28,6 +28,7 @@
           <ul>
             <li><a href="#appearance">Appearance</a></li>
             <li><a href="#utilities">Utilities</a></li>
+            <li><a href="#installation">Installation</a></li>
           </ul>
         </li>
       </ul>
@@ -162,6 +163,32 @@ Metrics, insights, and time tracking automatically generated from your programmi
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/dotfiles.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/dotfiles/blob/master/LICENSE
 [license-url]: https://github.com/SilasRodrigues19/dotfiles/blob/master/LICENSE.txt
+
+
+<hr>
+
+### Installation
+
+If you are interested in all the extensions listed above and you are a `Windows` user, you can run the `install_extensions.ps1` script located at 
+
+[scripts/install_extensions.ps1](../scripts/install_extensions.ps1)
+
+```bash
+.\scripts\install_extensions.ps1
+```
+
+The script is adapted to the folder structure of this repository at an example level, you can modify the path of the `README.md` file that contains the extensions, in this code shown below which is located in the script file
+
+```ps1
+...
+$fileName = "README"
+$folderName = ".vscode"
+$fileExtension = ".md"
+$filePath = ".\$folderName\$fileName$fileExtension"
+...
+```
+
+
 
 <br><hr>
 [🔼 Back to top](#VSCode-Extensions)
