@@ -261,6 +261,5 @@
     }
   ],
   "markdown-preview-enhanced.previewTheme": "monokai.css",
-  "security.workspace.trust.untrustedFiles": "open",
-  "glassit.alpha": 230
+  "cSpell.enabled": false
 }
